@@ -1,0 +1,20 @@
+{
+  "name": "meanstack_frontend",
+  "version": "1.0.0",
+  "description": "Meanstack authentication frontend.",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-file-upload": "^2.2.0",
+    "angular-route": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.0",
+    "ngstorage": "^0.3.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "runthis"
+  },
+  "author": "Rishabh Tiwari",
+  "license": "ISC"
+}

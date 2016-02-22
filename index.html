@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meanstack</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/assets/styles/main.css">
+
+</head>
+<body ng-app="app">
+
+<div ng-include="'app/views/head.html'"></div>
+<div ng-view></div>
+
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="node_modules/ngstorage/ngStorage.js"></script>
+<script src="node_modules/angular-file-upload/dist/angular-file-upload.min.js"></script>
+<script src="app.js"></script>
+<script src="app/scripts/modules/sign.module.js"></script>
+<script src="app/scripts/controllers/sign.ctrl.js"></script>
+<script src="app/scripts/modules/user.module.js"></script>
+<script src="app/scripts/controllers/user.ctrl.js"></script>
+<script src="app/scripts/modules/signup.module.js"></script>
+<script src="app/scripts/controllers/signup.ctrl.js"></script>
+</body>
+</html>

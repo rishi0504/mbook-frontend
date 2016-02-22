@@ -1,0 +1,35 @@
+<div class="container" style="margin-top:10px;" ng-controller="SignCtrl">
+    <input type="hidden" ng-model="message">
+    <div class="col-md-3"></div>
+    <div class="col-sm-6">
+        <div class="jumbotron" style="background-color:#ffffff">
+            <h3 style="text-align: center">Signin</h3>
+            <form ng-submit="signIn()">
+
+                <div class="form-group">
+                    <label for="username">Username :</label>
+                    <input type="text" class="form-control" ng-model="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" class="form-control" ng-model="password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="col-md-3"></div>
+
+    <div class="modal fade" id="myModal" role="dialog" style="margin-top:200px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>{{message}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

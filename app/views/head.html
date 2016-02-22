@@ -1,0 +1,27 @@
+<div ng-controller="MainCtrl">
+    <input type="hidden" ng-model="name">
+    <input type="hidden" ng-model="email">
+    <nav class="nav navbar-default" style="background-color: #34347f;" ng-hide="islogin()">
+        <div class="nav navbar-brand">
+            <a href="#" style="color: white">Mbook</a>
+        </div>
+        <ul class="nav navbar-nav" style="float: right">
+            <li><a href="#home" style="color: white">Home</a></li>
+            <li><a href="#signin" style="color: white">Signin</a></li>
+            <li><a href="#signup" style="color: white">Signup</a></li>
+        </ul>
+    </nav>
+
+    <nav class="nav navbar-default" style="background-color: #34347f" ng-show="islogin()">
+        <div class="nav navbar-brand">
+            <a href="#" style="color: white">Mbook</a>
+        </div>
+        <ul class="nav navbar-nav" style="float: right">
+            <li><a href="#home" style="color: white">Home</a></li>
+            <li><a href="#user" style="color: white">Hi {{user.name}}</a></li>
+            <li><a href="#setting" style="color: white">Setting</a></li>
+            <li><a href="#/" style="color: white" ng-click="islogout()">Logout</a></li>
+        </ul>
+    </nav>
+
+</div>

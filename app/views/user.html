@@ -1,0 +1,32 @@
+<div style="margin-top:50px;" ng-controller="UserCtrl">
+    <input type="hidden" ng-model="name">
+    <input type="hidden" ng-model="email">
+    <input type="hidden" ng-model="username">
+
+    <div class="col-sm-3">
+        <div class="container-fluid" style="margin-top:30px;background-color:#34347f;">
+            <div class="jumbotron" style="background-color:#53539e;margin:20px;">
+                <ul style="margin-left:-40px;" class="list-unstyled" style="margin-top:20px;">
+                    <li style="color:white;font-size:16px;" ng-repeat="(key,value) in userdata">{{value}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6"></div>
+    <div class="col-sm-3">
+        <div class="panel panel-primary" style="margin-top:30px;">
+            <div class="panel-heading">Users</div>
+            <div class="panel-body">
+                <ul style="margin-left:0;" class="list-unstyled" style="margin-top:20px;">
+                    <li style="color:black;font-size:16px;" ng-repeat="(key,value) in allOnlineUsers"><a>{{value}}</a>
+                        <input type="radio" checked="checked" style="float:right;" readonly/>
+                    </li>
+                    <li style="color:black;font-size:16px;" ng-repeat="(key,value) in allOfflineUsers"><a>{{value}}</a>
+                        <input type="radio"  style="float:right;" disabled/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
